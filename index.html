@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+<div class="cover">
+    <div class="container">
+        <form action="/" name="calc" class="calculator">
+            <input class="display" type="text" readonly name="txt"><br>
+            <button type="button" class="num clear" onclick="cleardisplay()" style="width:111px; background-color: red !important;">C</button>
+            <button type="button" class="num " onclick="appendtodisplay('/')">/</button>
+            <button type="button" class="num " onclick="appendtodisplay('*')">*</button><br>
+            <button type="button" class="num " onclick="appendtodisplay('7')">7</button>
+            <button type="button" class="num " onclick="appendtodisplay('8')">8</button>
+            <button type="button" class="num " onclick="appendtodisplay('9')">9</button>
+            <button type="button" class="num " onclick="appendtodisplay('-')">-</button><br>
+            <button type="button" class="num " onclick="appendtodisplay('4')">4</button>
+            <button type="button" class="num " onclick="appendtodisplay('5')">5</button>
+            <button type="button" class="num " onclick="appendtodisplay('6')">6</button>
+            <button type="button" class="num " onclick="appendtodisplay('+')">+</button><br>
+            <button type="button" class="num " onclick="appendtodisplay('1')">1</button>
+            <button type="button" class="num " onclick="appendtodisplay('2')">2</button>
+            <button type="button" class="num " onclick="appendtodisplay('3')">3</button>
+            <button type="button" class="num " onclick="appendtodisplay('%')">%</button><br> 
+            <button type="button" class="num " onclick="appendtodisplay('0')">0</button>
+            <button type="button" class="num " onclick="appendtodisplay('00')">00</button>
+            <button type="button" class="num " onclick="appendtodisplay('.')">.</button>
+            <button type="button" class="num " onclick="calculate()" style="background-color:#133E87" >=</button>
+        </form>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
